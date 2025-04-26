@@ -85,7 +85,7 @@ cc_library(
         "include/proxy-wasm/signature_util.h",
     ],
     linkopts = select({
-        "//bazel:crypto_system": ["-lcrypto"],
+        "//conditions:default": ["@envoy//bazel:boringcrypto"],
         "//conditions:default": [],
     }),
     deps = [

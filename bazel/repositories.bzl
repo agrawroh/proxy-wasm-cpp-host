@@ -113,9 +113,9 @@ def proxy_wasm_cpp_host_repositories():
     maybe(
         http_archive,
         name = "com_google_absl",
-        sha256 = "733726b8c3a6d39a4120d7e45ea8b41a434cdacde401cba500f14236c49b39dc",
-        strip_prefix = "abseil-cpp-20240116.2",
-        urls = ["https://github.com/abseil/abseil-cpp/archive/20240116.2.tar.gz"],
+        sha256 = "b396401fd29e2e679cace77867481d388c807671dc2acc602a0259eeb79b7811",
+        strip_prefix = "abseil-cpp-20250127.1",
+        urls = ["https://github.com/abseil/abseil-cpp/archive/20250127.1.tar.gz"],
     )
 
     maybe(
