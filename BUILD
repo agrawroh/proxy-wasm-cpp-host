@@ -92,7 +92,7 @@ cc_library(
         ":headers",
     ] + select({
         "//bazel:crypto_system": [],
-        "//conditions:default": ["@boringssl//:crypto"],
+        "//conditions:default": ["@envoy//bazel:boringcrypto"],
     }),
     alwayslink = 1,
 )
